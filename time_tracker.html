@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<html ng-app="timeTracker">
+<head>
+    <title>Time Tracker</title>
+    <link href="../css/bootstrap.css" rel="stylesheet"/>
+    <link href="../css/bootstrap-theme.css" rel="stylesheet"/>
+    <link href="../css/time-tracker.css" rel="stylesheet"/>
+
+    <script src="../scripts/ng/angular.js"></script>
+    <script src="../scripts/ng/ui_bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+</head>
+
+<body>
+   <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h2>Time Tracker</h2>
+            <br/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+            <h4>Registered Entries</h4>
+        </div>
+        <div class="col-md-4">
+            <h4>Available Statuses</h4>
+        </div>
+      </div>
+      <div class="row">
+          <!-- LHS Tracker Entries -->
+          <div class="col-md-8">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th>Status</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Elapsed Hours</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <span class="label label-info">
+                                Project Team Meeting
+                            </span>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <span class="glyphicon glyphicon-edit"></span>
+                          </a>
+                          09:35
+                        </td>
+                        <td>
+                          <a href="#">
+                            <span class="glyphicon glyphicon-edit"></span>
+                          </a>
+                          10:15
+                        </td>
+                        <td>0.6</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="label label-info">
+                                Personal Call
+                            </span>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <span class="glyphicon glyphicon-edit"></span>
+                          </a>
+                          10:15
+                        </td>
+                        <td>
+                          <a href="#">
+                            <span class="glyphicon glyphicon-edit"></span>
+                          </a>
+                          10:30
+                        </td>
+                        <td>0.25</td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <span class="label label-info">
+                                Working on Project A
+                            </span>
+                        </td>
+                        <td>
+                          <a href="#">
+                            <span class="glyphicon glyphicon-edit"></span>
+                          </a>
+                          10:30
+                        </td>
+                        <td>
+                          <a href="#">
+                            <span class="glyphicon glyphicon-edit"></span>
+                          </a>
+                          13:00
+                        </td>
+                        <td>2.5</td>
+                    </tr>
+
+                </tbody>
+            </table>
+          </div> <!-- LHS Column ends -->
+
+          <!-- RHS Predefined Tags -->
+          <div class="col-md-4">
+            <ul class="list-group available-statuses">
+              <li class="list-group-item">
+                <h4><a href="#" class="label label-primary">Started Day</a></h4>
+              </li>
+
+              <li class="list-group-item">
+                <h4><a href="#" class="label label-primary">Ended Day</a></h4>
+              </li>
+
+              <li class="list-group-item">
+                <h4><a href="#" class="label label-primary">Checking and Responding to Emails</a></h4>
+              </li>
+
+              <li class="list-group-item">
+                <h4><a href="#" class="label label-primary">Project Team Meeting</a></h4>
+              </li>
+
+              <li class="list-group-item">
+                <h4><a href="#" class="label label-primary">Working on Project A</a></h4>
+              </li>
+
+              <li class="list-group-item">
+                <h4><a href="#" class="label label-primary">Refreshment Break</a></h4>
+              </li>
+
+              <li class="list-group-item">
+                <h4><a href="#" class="label label-primary">Personal Call</a></h4>
+              </li>
+
+              <li class="list-group-item">
+                <h4><a href="#" class="label label-primary">Team Skype Chat</a></h4>
+              </li>
+
+            </ul>
+
+          </div> <!-- RHS Column ends -->
+
+       </div>
+   </div>
+</body>
+</html>
